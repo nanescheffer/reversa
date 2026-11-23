@@ -94,7 +94,14 @@ checkout.addEventListener('click',async function(event){
   const textoOriginal=checkout.innerHTML;
   checkout.textContent='Abrindo pagamento...';
   try {
-    const resposta=await fetch('https://reversa-checkout.nane-scheffer.workers.dev/criar-pagamento',{method:'POST'});
+    const gaCookie=document.cookie.split('; ').find(item=>item.startsWith('_ga='));
+    const gaClientId=gaCookie ? decodeURIComponent(gaCookie.split('=').slice(1).join('')).replace(/^GA\d+\.\d+\./,'') : null;
+    const cookies=Object.fromEntries(document.cookie.split('; ').filter(Boolean).map(item=>{const i=item.indexOf('=');return [item.slice(0,i),decodeURIComponent(item.slice(i+1))];}));
+    const resposta=await fetch('https://reversa-checkout.nane-scheffer.workers.dev/criar-pagamento',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({ga_client_id:gaClientId,fbp:cookies._fbp||null,fbc:cookies._fbc||null})
+    });
     if(!resposta.ok) throw new Error('Falha ao criar pagamento: '+resposta.status);
     const dados=await resposta.json();
     if(!dados.checkout_url || !/^https:\/\//i.test(dados.checkout_url)) throw new Error('Link de pagamento inválido');
