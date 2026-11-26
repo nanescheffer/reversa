@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MPX8FZ8X');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#16171a">
+<title>REVERSA | Vire o quadro</title>
+<meta name="description" content="Reversa: consultoria individual. Sessão de 90 minutos que lê o seu trabalho pelo lado de quem compra, com relatório em 24 horas úteis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500;600&family=Caveat:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --grafite:#16171a; --grafite2:#1e2025; --linha:#33363d; --papel:#f2f2ef; --cinza:#8b8f96; --tinta:#16171a;
+  --vermelho:#dc2a1f; --verde:#0f3b33; --azul:#10263f;
+  --disp:'Archivo','Arial Narrow',Impact,sans-serif; --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace; --mao:'Caveat',cursive;
+  --gut:clamp(20px,5vw,72px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--grafite);color:var(--papel);font-family:var(--disp);font-stretch:100%;font-size:18px;line-height:1.55;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1320px;margin:0 auto;padding:0 var(--gut)}
+.mono{font-family:var(--mono)}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--cinza);display:flex;gap:12px;align-items:center}
+.eyebrow::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--vermelho);flex:none}
+h1,h2,h3{font-weight:900;text-transform:uppercase;font-stretch:62%;font-variation-settings:"wdth" 62;line-height:.9;letter-spacing:-.005em}
+h2{font-size:clamp(44px,6.4vw,92px)}
+h3{font-size:clamp(26px,2.6vw,36px);line-height:.95}
+p{max-width:62ch}
+
+/* botão */
+.cta{display:inline-flex;align-items:center;gap:14px;background:var(--vermelho);color:#fff;text-decoration:none;font-family:var(--mono);font-weight:600;font-size:15px;letter-spacing:.06em;text-transform:uppercase;padding:20px 28px;border:0;cursor:pointer;box-shadow:6px 6px 0 var(--papel);transition:transform .15s,box-shadow .15s}
+.cta:hover{transform:translate(-2px,-2px);box-shadow:9px 9px 0 var(--papel)}
+.cta:active{transform:translate(4px,4px);box-shadow:2px 2px 0 var(--papel)}
+.cta.inv{background:var(--papel);color:var(--grafite);box-shadow:6px 6px 0 var(--grafite)}
+.cta.inv:hover{box-shadow:9px 9px 0 var(--grafite)}
+.cta svg{width:20px;height:20px}
+
+/* etiqueta de inventário e vagas */
+.etq{display:inline-block;background:var(--papel);color:var(--tinta);font:500 11px/1.25 var(--mono);letter-spacing:.04em;padding:6px 9px;transform:rotate(-1.5deg);text-transform:uppercase}
+.vagas{list-style:none;display:flex;gap:10px;flex-wrap:wrap}
+.vaga{display:flex;flex-direction:column;align-items:center;gap:7px;background:var(--papel);color:var(--tinta);padding:7px 8px 9px;min-width:46px;font:500 11px/1 var(--mono);letter-spacing:.05em}
+.vaga:nth-child(odd){transform:rotate(-1.2deg)}.vaga:nth-child(even){transform:rotate(1deg)}
+.vaga i{width:20px;height:20px;border-radius:50%;border:2px solid var(--vermelho);display:block}
+.vaga.vendida i{background:var(--vermelho)}
+.vagas-nota{font:400 12px/1.5 var(--mono);color:var(--cinza);margin-top:12px;max-width:44ch}
+
+/* topo */
+.bar{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-weight:900;font-stretch:125%;font-variation-settings:"wdth" 125;letter-spacing:.22em;font-size:15px;text-decoration:none;display:flex;align-items:center;gap:10px}
+.logo b{width:11px;height:11px;border-radius:50%;background:var(--vermelho);display:inline-block}
+.bar .mini{font:600 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border:1px solid var(--linha);padding:11px 16px}
+.bar .mini:hover{border-color:var(--papel)}
+
+/* hero */
+.hero{padding-bottom:clamp(56px,8vw,120px);border-bottom:1px solid var(--linha)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,1fr);gap:clamp(28px,4.5vw,72px);align-items:start;margin-top:clamp(14px,2.4vw,34px)}
+.kicker{font:500 12px/1.5 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--cinza);margin-bottom:16px}
+.hero h1{font-size:clamp(80px,9.4vw,150px);line-height:.8;margin-left:-.04em;white-space:nowrap}
+.hero h1 em{font-style:normal;color:var(--vermelho)}
+.selo{display:inline-block;margin:22px 0 0;border:1.5px solid var(--papel);padding:7px 13px;font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;transform:rotate(-2deg)}
+.sub{font-size:clamp(18px,1.5vw,21px);line-height:1.5;margin-top:24px;max-width:34em;color:#e6e6e2}
+.sub2{font-size:16px;line-height:1.5;color:#b9bcc2;margin-top:14px;max-width:36em}
+.sub strong{font-weight:700;color:#fff}
+.oferta{margin-top:22px;display:grid;gap:16px;padding-top:20px;border-top:1px solid var(--linha)}
+.oferta .linha{display:flex;gap:26px;align-items:center;flex-wrap:wrap}
+.oferta .linha .vagas-nota{margin-top:8px}
+.preco{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.preco b{font-weight:900;font-stretch:62%;font-variation-settings:"wdth" 62;font-size:clamp(46px,4.4vw,66px);line-height:.9}
+.preco span{font:500 12.5px/1.5 var(--mono);color:#c9cbd0;max-width:50ch}
+.micro{font:400 12px/1.6 var(--mono);color:var(--cinza);max-width:52ch}
+
+/* moldura do vídeo (bastidor) */
+.quadro{position:relative;padding:16px;border:3px solid var(--papel);background:var(--grafite2)}
+.quadro::before{content:"";position:absolute;inset:7px;border:1px solid var(--linha);pointer-events:none}
+.quadro .k{position:absolute;width:20px;height:20px;background:var(--grafite);border:3px solid var(--papel)}
+.quadro .k.a{top:-12px;left:-12px}.quadro .k.b{top:-12px;right:-12px}.quadro .k.c{bottom:-12px;left:-12px}.quadro .k.d{bottom:-12px;right:-12px}
+.player{position:relative;aspect-ratio:16/9;background:#0d0e10;overflow:hidden}
+.player img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.poster{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:flex-start;padding:5.5%;background:
+  linear-gradient(135deg,#1a1c21 0 60%,#101114 60% 100%)}
+.poster p{font-weight:900;font-stretch:62%;font-variation-settings:"wdth" 62;text-transform:uppercase;font-size:clamp(24px,3.2vw,50px);line-height:.92;max-width:11em}
+.poster p s{text-decoration-color:var(--vermelho);text-decoration-thickness:.08em}
+.poster small{font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--cinza);margin-bottom:14px}
+.play{position:absolute;right:5%;bottom:7%;display:flex;align-items:center;gap:14px;background:transparent;border:0;cursor:pointer;color:var(--papel);font:600 12px var(--mono);letter-spacing:.14em;text-transform:uppercase}
+.play span{width:76px;height:76px;border-radius:50%;background:var(--vermelho);display:grid;place-items:center;transition:transform .2s;box-shadow:0 0 0 10px rgba(220,42,31,.22)}
+.play:hover span{transform:scale(1.07)}
+.play svg{width:34px;height:34px;margin-left:5px}
+.player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.legenda-v{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-top:22px;flex-wrap:wrap}
+.legenda-v .t{font:400 12px/1.5 var(--mono);color:var(--cinza)}
+
+/* seções gerais */
+section.s{padding:clamp(72px,10vw,150px) 0}
+.papel{background:var(--papel);color:var(--tinta)}
+.papel .eyebrow{color:#5b5f66}
+.verde{background:var(--verde)}
+.azul{background:var(--azul)}
+.s-head{display:grid;gap:22px;margin-bottom:clamp(36px,5vw,64px)}
+
+/* dois lados */
+.lados{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(32px,6vw,96px);align-items:center}
+.lados .txt p{margin-top:22px;font-size:clamp(19px,1.6vw,22px)}
+.lados .txt p.big{font-weight:800;font-size:clamp(26px,2.6vw,38px);line-height:1.12;margin-top:34px;max-width:18em}
+.lados .txt p.big em{font-style:normal;background:var(--vermelho);color:#fff;padding:0 .18em}
+.par{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,2vw,28px)}
+.face-fig{position:relative}
+.face-fig figcaption{font:500 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;margin-top:12px;display:flex;justify-content:space-between;color:#5b5f66}
+.face-fig svg{width:100%;height:auto;box-shadow:0 18px 40px rgba(0,0,0,.18)}
+.par .face-fig:nth-child(2){margin-top:clamp(18px,3vw,44px)}
+
+/* quatro planos */
+.planos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;border:2px solid var(--papel)}
+.plano{padding:clamp(22px,2.4vw,34px);border-right:2px solid var(--papel);display:flex;flex-direction:column;gap:18px;min-height:340px;position:relative}
+.plano:last-child{border-right:0}
+.plano .n{font:600 12px var(--mono);letter-spacing:.14em;color:var(--cinza)}
+.plano h3{font-size:clamp(28px,2.7vw,40px)}
+.plano p{font-size:16px;line-height:1.5;color:#d9dade;margin-top:auto}
+.plano.fica{background:var(--papel);color:var(--tinta)}
+.plano.fica .n{color:#5b5f66}.plano.fica p{color:#2a2c31}
+.plano.fica::after{content:"";position:absolute;top:18px;right:18px;width:22px;height:22px;border-radius:50%;background:var(--vermelho)}
+.planos-nota{margin-top:30px;font:400 13px/1.6 var(--mono);color:#c9cbd0;max-width:70ch}
+
+/* flip */
+.flip-wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(30px,6vw,90px);align-items:center}
+.flip-wrap .txt p{margin-top:22px;font-size:clamp(18px,1.5vw,21px);color:#e6e6e2}
+.flip-wrap .txt .cta{margin-top:30px}
+.flip{perspective:1600px}
+.flip-in{display:grid;transition:transform .85s cubic-bezier(.3,.7,.2,1);transform-style:preserve-3d}
+.flip.virado .flip-in{transform:rotateY(180deg)}
+.face{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;padding:clamp(22px,3vw,40px);min-height:480px}
+.face.fr{background:var(--papel);color:var(--tinta)}
+.face.vs{background:#101114;color:var(--papel);transform:rotateY(180deg);border:3px solid var(--papel);position:relative}
+.face .rot{font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;display:flex;justify-content:space-between;margin-bottom:22px;opacity:.75}
+.chat{display:grid;gap:14px;font-size:clamp(16px,1.4vw,19px);line-height:1.5}
+.msg{max-width:88%;padding:14px 17px}
+.msg.eu{background:#dcdcd7;justify-self:start}
+.msg.ela{background:#16171a;color:var(--papel);justify-self:end}
+.msg .quem{font:500 10.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;opacity:.6;display:block;margin-bottom:5px}
+.vs .msg.eu{background:#23252b}.vs .msg.ela{background:#23252b;color:var(--papel)}
+.circ{display:inline;border:2.5px solid var(--vermelho);border-radius:52% 46% 54% 44% / 60% 52% 48% 40%;padding:1px 9px;margin:0 -3px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.num{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--vermelho);color:#fff;font:600 12px var(--mono);vertical-align:2px;margin-left:5px}
+.notas{margin-top:22px;display:grid;gap:11px;font-family:var(--mao);font-weight:600;font-size:clamp(21px,1.9vw,25px);line-height:1.12;color:#ffd9d4}
+.notas li{list-style:none;display:flex;gap:10px;align-items:flex-start}
+.notas .num{flex:none;margin-top:3px}
+.flip .rodape{font:400 11.5px/1.5 var(--mono);margin-top:18px;opacity:.7}
+.btn-virar{margin-top:18px}
+.dica{margin-top:34px;font:600 13px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--vermelho)}
+
+/* sessão */
+.tres{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(14px,2vw,28px)}
+.tempo{border:2px solid var(--tinta);padding:clamp(22px,2.6vw,34px);display:flex;flex-direction:column;gap:14px;background:#fff;position:relative}
+.tempo .n{font:600 12px var(--mono);letter-spacing:.14em;color:#5b5f66}
+.tempo h3{font-size:clamp(34px,3.6vw,52px)}
+.tempo p{font-size:17px;line-height:1.5}
+.sai{margin-top:clamp(36px,5vw,64px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,60px);align-items:center}
+.sai p.q{font-weight:800;font-size:clamp(28px,3.3vw,48px);line-height:1.08;max-width:15em}
+.sai p.q span{background:var(--vermelho);color:#fff;padding:0 .15em}
+.card-of{background:var(--grafite);color:var(--papel);padding:clamp(26px,3vw,40px);display:grid;gap:22px;box-shadow:10px 10px 0 var(--vermelho)}
+.card-of .preco b{font-size:clamp(64px,6vw,96px)}
+.card-of .vaga{background:var(--papel)}
+.card-of ul.inclui{list-style:none;display:grid;gap:8px;font-size:16px;color:#d9dade}
+.card-of ul.inclui li::before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--vermelho);margin-right:11px}
+.card-of .nota{font:400 12px/1.6 var(--mono);color:var(--cinza)}
+
+/* Ariane */
+.ari{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(30px,6vw,96px);align-items:center}
+.foto{aspect-ratio:4/5;border:3px solid var(--papel);display:grid;place-items:center;text-align:center;padding:24px;position:relative;background:repeating-linear-gradient(135deg,#0e2037 0 14px,#10263f 14px 28px);font:500 12px/1.6 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:#a9b7c8}
+.foto .etq{position:absolute;left:-12px;bottom:26px}
+.ari .txt p{margin-top:20px;font-size:clamp(18px,1.5vw,21px);color:#e3e8ee}
+.ari h2{margin-bottom:8px}
+
+/* para quem */
+.pq{display:grid;grid-template-columns:1fr 1fr;gap:clamp(14px,2vw,28px)}
+.pq>div{padding:clamp(22px,2.6vw,36px);border:2px solid var(--tinta)}
+.pq .sim{background:var(--tinta);color:var(--papel)}
+.pq h3{font-size:clamp(30px,3.2vw,46px);margin-bottom:14px}
+.pq p{font-size:18px}
+.limites{margin-top:30px;font:400 13px/1.65 var(--mono);color:#454850;max-width:90ch}
+
+/* faq */
+.faq{border-top:2px solid var(--papel);max-width:980px}
+.faq details{border-bottom:1px solid var(--linha);padding:0}
+.faq summary{list-style:none;cursor:pointer;padding:24px 0;font-weight:800;font-size:clamp(20px,2vw,26px);display:flex;justify-content:space-between;gap:20px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font:500 28px var(--mono);color:var(--vermelho)}
+.faq details[open] summary::after{content:"–"}
+.faq p{padding:0 0 26px;color:#d3d5da}
+
+/* fecho */
+.fecho{background:var(--vermelho);color:#fff;padding:clamp(80px,12vw,180px) 0;overflow:hidden}
+.fecho h2{font-size:clamp(88px,16vw,260px);line-height:.78;margin-left:-.03em}
+.fecho .l{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:clamp(24px,5vw,80px);align-items:end;margin-top:clamp(30px,5vw,60px)}
+.fecho p{font-weight:700;font-size:clamp(22px,2.4vw,34px);line-height:1.15;max-width:20em}
+.fecho .vaga{background:#fff}
+.fecho .vaga i{border-color:var(--vermelho)}
+.fecho .acoes{display:grid;gap:22px;justify-items:start}
+.fecho .vagas-nota{color:#ffe1dd}
+
+footer{padding:44px 0 110px;color:var(--cinza);font:400 12px/1.7 var(--mono)}
+footer .wrap{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}
+footer p{max-width:62ch}
+
+
+.faixa{border-bottom:1px solid var(--linha);background:var(--grafite2)}
+.faixa .wrap{display:flex;gap:clamp(14px,2.4vw,34px);align-items:center;flex-wrap:wrap;padding-top:16px;padding-bottom:16px;font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.faixa span{color:var(--cinza)}.faixa b{font-weight:600;color:var(--papel);display:inline-flex;align-items:center;gap:9px}
+.faixa b::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--vermelho)}
+.casos-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,5vw,80px);align-items:end}
+.casos-head p{font-size:clamp(18px,1.5vw,21px);color:#e3eeea}.casos-head .aviso{font:500 12.5px var(--mono);margin-top:14px;color:#a9cfc5}
+.casos{display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,44px);margin-top:44px}
+.caso .btn-virar{margin-top:22px}
+.caso .face{min-height:560px;display:flex;flex-direction:column}
+.caso .face.fr{justify-content:flex-start}
+.pedido{font:600 12px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#5b5f66;margin-bottom:12px}
+.qt{font-size:clamp(34px,3.2vw,50px);line-height:.95}
+.ctx{margin-top:22px;font-size:18px}
+.caso .dica{margin-top:auto;padding-top:34px}
+.caso .notas{margin-top:6px}
+.saida{margin-top:auto;padding-top:20px;font:400 12.5px/1.65 var(--mono);color:#cfd1d6;border-top:1px solid var(--linha)}
+.perg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border:2px solid var(--papel)}
+.perg article{padding:clamp(20px,2.2vw,30px);border-right:2px solid var(--papel);border-bottom:2px solid var(--papel);display:flex;flex-direction:column;gap:14px;min-height:260px}
+.perg article:nth-child(3n){border-right:0}.perg article:nth-child(n+4){border-bottom:0}
+.perg .n{font:600 12px var(--mono);letter-spacing:.14em;color:var(--vermelho)}
+.perg h3{font-size:clamp(24px,2.1vw,30px);line-height:1}
+.perg p{margin-top:auto;font-size:16px;color:#d3d5da}
+.fica ul{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px clamp(20px,4vw,60px);margin-top:20px}
+.fica li{font-weight:800;font-size:clamp(24px,2.6vw,38px);line-height:1.08;padding-left:30px;position:relative}
+.fica li::before{content:"";position:absolute;left:0;top:.3em;width:16px;height:16px;border-radius:50%;background:var(--vermelho)}
+.fica .nota-f{margin-top:20px;font:400 12.5px/1.6 var(--mono);color:#5b5f66}
+.voz{margin-top:clamp(30px,5vw,56px);background:var(--grafite);color:var(--papel);padding:clamp(26px,4vw,56px);display:grid;gap:18px;border-left:12px solid var(--vermelho)}
+.voz p{font-weight:800;font-size:clamp(22px,2.4vw,34px);line-height:1.18;max-width:30em;color:var(--papel)}
+.voz p+p{font-weight:500;font-size:clamp(18px,1.6vw,22px);color:#d3d5da}
+.voz cite{font:600 12px var(--mono);letter-spacing:.14em;text-transform:uppercase;font-style:normal;color:var(--cinza)}
+.tempo{color:var(--tinta)}
+
+/* barra móvel */
+.fixa{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--grafite);border-top:2px solid var(--vermelho);padding:12px var(--gut);display:none;align-items:center;justify-content:space-between;gap:14px;transform:translateY(110%);transition:transform .3s}
+.fixa.on{transform:none}
+.fixa .p{font-weight:900;font-stretch:62%;font-variation-settings:"wdth" 62;font-size:30px;line-height:1}
+.fixa .p small{display:block;font:500 10.5px var(--mono);letter-spacing:.08em;color:var(--cinza);margin-top:3px}
+.fixa .cta{padding:15px 18px;font-size:13px;box-shadow:none}
+
+@media (max-width:980px){
+  .casos,.casos-head,.fica ul{grid-template-columns:1fr}
+  .perg{grid-template-columns:1fr 1fr}.perg article:nth-child(3n){border-right:2px solid var(--papel)}.perg article:nth-child(2n){border-right:0}.perg article:nth-child(n+4){border-bottom:2px solid var(--papel)}.perg article:nth-child(n+5){border-bottom:0}
+  body{font-size:17px}
+  .hero-grid,.lados,.flip-wrap,.sai,.ari,.fecho .l{grid-template-columns:1fr}
+  .planos{grid-template-columns:1fr 1fr}
+  .plano:nth-child(2){border-right:0}.plano:nth-child(-n+2){border-bottom:2px solid var(--papel)}
+  .plano{min-height:260px}
+  .tres,.pq{grid-template-columns:1fr}
+  .fixa{display:flex}
+  .hero h1{font-size:clamp(88px,26vw,150px)}
+  .hero .col-video{order:2}.hero .col-txt{display:contents}
+  .hero .h-top{order:1}.hero .h-rest{order:3}
+  .hero-grid{display:flex;flex-direction:column;gap:30px}
+  .bar .mini{display:none}
+  .foto{max-width:420px}
+}
+@media (max-width:560px){
+  .perg{grid-template-columns:1fr}.perg article{border-right:0!important;border-bottom:2px solid var(--papel)!important}.perg article:last-child{border-bottom:0!important}
+  .caso .face{min-height:0}
+  .planos{grid-template-columns:1fr}
+  .plano{border-right:0!important;border-bottom:2px solid var(--papel)}.plano:last-child{border-bottom:0}
+  .cta{width:100%;justify-content:center}
+  .fixa .cta{width:auto}
+  .par{grid-template-columns:1fr 1fr}
+  .face{min-height:0}
+  .vaga{min-width:48px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.foto{padding:0}.foto img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/5}.hero-grid>*{min-width:0}.col-video{width:100%}.micro a,.faq a{text-decoration:underline}.cta[aria-disabled=true]{opacity:.65;pointer-events:none}@media(max-width:560px){.hero h1{font-size:clamp(65px,23vw,125px)}.hero .h-top,.hero .h-rest{width:100%}.play span{width:52px;height:52px}.poster p{font-size:clamp(22px,7vw,36px)}.fixa{padding-bottom:calc(12px + env(safe-area-inset-bottom));}.fixa .p small{font-size:9px}.fixa .cta{padding:12px}.fecho h2{font-size:clamp(65px,20vw,120px)}}
+</style>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPX8FZ8X" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPX8FZ8X" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<header class="hero" id="topo">
+  <div class="wrap">
+    <div class="bar">
+      <a class="logo" href="#topo"><b></b>REVERSA</a>
+      <a class="mini" href="#oferta">R$ 590 · 5 vagas</a>
+    </div>
+
+    <div class="hero-grid">
+      <div class="col-txt">
+        <div class="h-top">
+          <p class="kicker">Consultoria individual de Ariane Scheffer<br>para quem vive de trabalho autoral</p>
+          <h1>Vire o<br><em>quadro.</em></h1>
+          <span class="selo">Nem tudo é o que parece</span>
+        </div>
+        <div class="h-rest">
+          <p class="sub">Você conhece o seu trabalho por dentro. Quem compra o encontra do outro lado. A Reversa <strong>lê o seu percurso por esse lado</strong> e mostra o que manter, o que ajustar e onde pôr o próximo real e a próxima hora.</p>
+          <p class="sub2">Você sai com mais consciência do que o seu trabalho vale, mais “nãos” ao que não dá retorno, mais tempo para criar.</p>
+          <div class="oferta" id="oferta">
+            <div class="preco"><b>R$ 590</b><span>Sessão individual online de 90 minutos, análise prévia dos seus materiais e relatório digital em 24 horas úteis.</span></div>
+            <div class="linha">
+              <a class="cta" href="https://reversa-checkout.nane-scheffer.workers.dev/criar-pagamento" data-checkout="true" id="checkout-btn">Contratar a Reversa <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+              <div>
+                <ul class="vagas" aria-label="Vagas do primeiro lote">
+                  <li class="vaga"><span>Nº 01</span><i></i></li>
+                  <li class="vaga"><span>Nº 02</span><i></i></li>
+                  <li class="vaga"><span>Nº 03</span><i></i></li>
+                  <li class="vaga"><span>Nº 04</span><i></i></li>
+                  <li class="vaga"><span>Nº 05</span><i></i></li>
+                </ul>
+                <p class="vagas-nota">Primeiro lote, cinco vagas. Cada ponto vermelho é uma vaga preenchida.</p>
+              </div>
+            </div>
+            <p class="micro">Pagamento pelo Mercado Pago. Dúvida antes de decidir? <a href="https://nanescheffer.wixforms.com/f/7505968077872301067" target="_blank" rel="noopener noreferrer">Envie sua dúvida pelo formulário de contato.</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-video">
+        <div class="quadro">
+          <span class="k a"></span><span class="k b"></span><span class="k c"></span><span class="k d"></span>
+          <div class="player" id="player">
+            <img src="https://img.youtube.com/vi/mNJI0cFo26I/hqdefault.jpg" alt="" onerror="this.remove()">
+            <div class="poster"><small>Vídeo · 4 min</small><p>Você divulga.<br>Recebe elogios.<br><s>Mas</s>...</p></div>
+            <button class="play" id="play" aria-label="Assistir ao vídeo">Assistir<span><svg viewBox="0 0 24 24" fill="#fff"><path d="M6 3.5v17l15-8.5z"/></svg></span></button>
+          </div>
+        </div>
+        <div class="legenda-v">
+          <span class="etq">Nº 00 · Como eu leio um percurso</span>
+          <span class="t">Assista à apresentação.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="faixa"><div class="wrap"><span>Para quem vive de</span><b>Cerâmica</b><b>Tapeçaria</b><b>Joias autorais</b><b>Calçados autorais</b><b>Artes visuais</b><b>Ateliês e estúdios</b></div></div>
+
+<section class="s papel" id="lados">
+  <div class="wrap lados">
+    <div class="txt">
+      <p class="eyebrow">01 · O outro lado</p>
+      <h2 style="margin-top:22px">Todo trabalho tem dois lados.</h2>
+      <p>De frente, está o que você sabe: a intenção, as horas, cada decisão que custou fazer. Do outro lado, está o que quem compra encontra: um perfil, uma mensagem, um valor, uma resposta.</p>
+      <p>Quase ninguém olha o próprio trabalho desse lado. É nele que muita decisão de compra acontece.</p>
+      <p class="big">A Reversa é o olhar <em>do outro lado.</em></p>
+    </div>
+    <div class="par">
+      <figure class="face-fig">
+        <svg viewBox="0 0 300 380" role="img" aria-label="Frente de um quadro abstrato">
+          <rect width="300" height="380" fill="#e9e9e5"/>
+          <rect x="0" y="0" width="300" height="380" fill="#10263f"/>
+          <rect x="34" y="40" width="160" height="210" fill="#f2f2ef"/>
+          <circle cx="206" cy="108" r="58" fill="#dc2a1f"/>
+          <rect x="34" y="276" width="232" height="14" fill="#8b8f96"/>
+          <rect x="34" y="302" width="120" height="14" fill="#0f3b33"/>
+          <path d="M34 250 L194 250 L194 200 Z" fill="#16171a"/>
+        </svg>
+        <figcaption><span>Frente</span><span>O que você sabe</span></figcaption>
+      </figure>
+      <figure class="face-fig">
+        <svg viewBox="0 0 300 380" role="img" aria-label="Verso de um quadro, com bastidor, etiqueta e ponto vermelho">
+          <rect width="300" height="380" fill="#16171a"/>
+          <rect x="14" y="14" width="272" height="352" fill="none" stroke="#f2f2ef" stroke-width="10"/>
+          <rect x="140" y="14" width="20" height="352" fill="#f2f2ef"/>
+          <rect x="14" y="180" width="272" height="20" fill="#f2f2ef"/>
+          <g fill="#16171a" stroke="#f2f2ef" stroke-width="3"><rect x="30" y="30" width="26" height="26"/><rect x="244" y="30" width="26" height="26"/><rect x="30" y="324" width="26" height="26"/><rect x="244" y="324" width="26" height="26"/></g>
+          <g transform="rotate(-4 205 280)"><rect x="162" y="236" width="96" height="76" fill="#fff"/>
+            <text x="172" y="256" font-family="IBM Plex Mono, monospace" font-size="9" fill="#16171a">SEM TÍTULO</text>
+            <text x="172" y="272" font-family="IBM Plex Mono, monospace" font-size="9" fill="#16171a">70 x 100 CM</text>
+            <text x="172" y="288" font-family="IBM Plex Mono, monospace" font-size="9" fill="#16171a">2026 · Nº 04</text>
+            <circle cx="238" cy="296" r="8" fill="#dc2a1f"/></g>
+          <path d="M40 110 q16 -20 36 -4 t38 -6" fill="none" stroke="#dc2a1f" stroke-width="4" stroke-linecap="round"/>
+          <text x="38" y="150" font-family="Caveat, cursive" font-size="22" fill="#f2f2ef" font-weight="600">onde eu olho</text>
+        </svg>
+        <figcaption><span>Verso</span><span>O que quem compra encontra</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="le">
+  <div class="wrap">
+    <div class="s-head">
+      <p class="eyebrow">02 · O que eu leio</p>
+      <h2>Quatro lugares do seu percurso.</h2>
+    </div>
+    <div class="planos">
+      <article class="plano"><span class="n">01</span><h3>Como o trabalho se apresenta</h3><p>O que alguém que nunca ouviu falar de você entende, no primeiro olhar, sobre o que você faz e o que custa fazer?</p></article>
+      <article class="plano"><span class="n">02</span><h3>Como você recebe quem chega</h3><p>Quando alguém demonstra interesse, o que encontra? E o que acontece em seguida?</p></article>
+      <article class="plano"><span class="n">03</span><h3>Como a conversa chega à decisão</h3><p>Entre o "quanto custa?" e o "fechado", o que a pessoa vê, ouve e precisa saber?</p></article>
+      <article class="plano fica"><span class="n">04</span><h3>O que já funciona</h3><p>O que existe, trabalha por você e merece ficar exatamente como está.</p></article>
+    </div>
+    <p class="planos-nota">A leitura parte da queixa que você traz e confere com o que os seus materiais permitem observar. A queixa é o ponto de partida. O diagnóstico vem depois, com evidência.</p>
+  </div>
+</section>
+
+<section class="s verde" id="exemplo">
+  <div class="wrap">
+    <p class="eyebrow" style="color:#9fc2b8">03 · Dois casos reais</p>
+    <div class="casos-head">
+      <h2 style="margin-top:6px">Vire o quadro.<br>Veja.</h2>
+      <div>
+        <p>Casos reais, anonimizados a pedido dos clientes. De frente, o pedido que chegou. Do outro lado, o que eu li.</p>
+      </div>
+    </div>
+    <div class="casos">
+      <div class="caso">
+        <div class="flip" id="f1"><div class="flip-in">
+          <div class="face fr">
+            <div class="rot"><span>Caso 01 · Frente</span><span>Atelier de SP</span></div>
+            <p class="pedido">O pedido</p>
+            <h3 class="qt">Vender a produção do atelier, por medida, em uma loja on-line.</h3>
+            <p class="ctx">Produção artesanal, com manualidade e criatividade.</p>
+            <p class="dica">Vire o quadro para ver o que eu li →</p>
+          </div>
+          <div class="face vs">
+            <div class="rot"><span>Caso 01 · Verso</span><span>A minha leitura</span></div>
+            <ul class="notas">
+              <li><span class="num">1</span><span>A concorrente era uma indústria que produz <span class="circ">mil peças por hora</span>. O atelier faz poucas em dias.</span></li>
+              <li><span class="num">2</span><span>Nos projetos entregues havia a composição que a artista criava para cada um. <span class="circ">Ela não cobrava por isso.</span></span></li>
+              <li><span class="num">3</span><span>A pergunta: quais clientes <span class="circ">mais atraem</span>, e não quais mais fecham? O comprador certo era outro.</span></li>
+            </ul>
+            <p class="saida">O que mudou: comunicação, captação e preço. O site virou acervo, a venda passou a ser consultiva e o valor dos projetos aumentou. O desafio de preço continua.</p>
+          </div>
+        </div></div>
+        <button class="cta btn-virar" type="button" data-for="f1">Virar o quadro <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 12a8 8 0 1 1-3-6.2M20 4v5h-5"/></svg></button>
+      </div>
+      <div class="caso">
+        <div class="flip" id="f2"><div class="flip-in">
+          <div class="face fr">
+            <div class="rot"><span>Caso 02 · Frente</span><span>Atelier em lançamento</span></div>
+            <p class="pedido">O pedido</p>
+            <h3 class="qt">Mais seguidores e mais alcance para o lançamento do atelier.</h3>
+            <p class="ctx">Um atelier que estava para abrir e queria ser visto por mais gente.</p>
+            <p class="dica">Vire o quadro para ver o que eu li →</p>
+          </div>
+          <div class="face vs">
+            <div class="rot"><span>Caso 02 · Verso</span><span>A minha leitura</span></div>
+            <ul class="notas">
+              <li><span class="num">1</span><span>Em 60 dias, seguidores e alcance cresceram.</span></li>
+              <li><span class="num">2</span><span>Propus outra meta: <span class="circ">uma lista de quem quer receber o catálogo</span> na abertura. Convite para visitar o perfil e link de interesse na bio.</span></li>
+              <li><span class="num">3</span><span><span class="circ">Mais de 200 interessados</span> em menos de 30 dias, de forma quase orgânica.</span></li>
+            </ul>
+            <p class="saida">Na abertura, o atelier vendeu. As visitas seguiram nos dias seguintes, vindas do catálogo enviado à lista. Simples, prático e direto.</p>
+          </div>
+        </div></div>
+        <button class="cta btn-virar" type="button" data-for="f2">Virar o quadro <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 12a8 8 0 1 1-3-6.2M20 4v5h-5"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="metodo">
+  <div class="wrap">
+    <div class="s-head">
+      <p class="eyebrow">04 · O método</p>
+      <h2>As perguntas que eu faço.</h2>
+      <p style="color:#d3d5da;max-width:58ch">Antes de recomendar qualquer mudança, eu pergunto. Estas são algumas, e o que cada uma costuma mostrar.</p>
+    </div>
+    <div class="perg">
+      <article><span class="n">01</span><h3>Quais clientes mais te atraem? E quais mais fecham?</h3><p>Às vezes o comprador certo é outro.</p></article>
+      <article><span class="n">02</span><h3>Há vendas orgânicas dentro do perfil de cliente que você quer?</h3><p>Mostra como o seu trabalho está sendo procurado e validado.</p></article>
+      <article><span class="n">03</span><h3>Qual é o objetivo do seu Instagram? Ele reforça a marca?</h3><p>Define o que o perfil precisa entregar.</p></article>
+      <article><span class="n">04</span><h3>Quais canais você ainda não usou? Blog, e-mail, portfólio físico.</h3><p>São as alavancas pouco exploradas.</p></article>
+      <article><span class="n">05</span><h3>Como é o seu fluxo de captação? Frequência, investimento, resultados, planilhas.</h3><p>É onde costuma aparecer a falta de gerenciamento comercial.</p></article>
+      <article><span class="n">06</span><h3>O que você já entrega sem cobrar?</h3><p>Às vezes é o que o comprador mais valoriza.</p></article>
+    </div>
+    <p class="planos-nota" style="margin-top:34px">A queixa é o ponto de partida. A leitura confere com o que os seus materiais mostram.</p>
+  </div>
+</section>
+
+<section class="s papel" id="sessao">
+  <div class="wrap">
+    <div class="s-head">
+      <p class="eyebrow">05 · A sessão</p>
+      <h2>Antes, durante e depois.</h2>
+    </div>
+    <div class="tres">
+      <article class="tempo"><span class="n">ANTES</span><h3>Análise prévia</h3><p>Eu analiso os documentos, canais e processos que você compartilhar. Os 90 minutos serão para discutir achados, não para coletar informação.</p></article>
+      <article class="tempo"><span class="n">DURANTE</span><h3>90 minutos</h3><p>Sessão individual online. Você traz as questões que te acompanham. Eu trago o que vi do outro lado.</p></article>
+      <article class="tempo"><span class="n">DEPOIS</span><h3>Relatório em 24h úteis</h3><p>Relatório digital com orientações essenciais e prioridades, em até 24 horas úteis depois do encontro.</p></article>
+    </div>
+    <div class="fica">
+      <p class="eyebrow" style="margin-top:clamp(40px,6vw,80px)">O que fica para você</p>
+      <ul>
+        <li>Mais consciência do que o seu trabalho vale.</li>
+        <li>Mais “nãos” ao que não traz lucro.</li>
+        <li>Mais tempo para criar.</li>
+        <li>Menos produção em massa de baixo retorno.</li>
+      </ul>
+    </div>
+    <div class="sai">
+      <p class="q">Você sai sabendo o que manter, o que ajustar e <span>onde pôr o próximo real</span> e a próxima hora.</p>
+      <div class="card-of" id="checkout">
+        <div class="preco"><b>R$ 590</b><span>Primeiro lote, condição especial de lançamento.</span></div>
+        <ul class="vagas"><li class="vaga"><span>Nº 01</span><i></i></li><li class="vaga"><span>Nº 02</span><i></i></li><li class="vaga"><span>Nº 03</span><i></i></li><li class="vaga"><span>Nº 04</span><i></i></li><li class="vaga"><span>Nº 05</span><i></i></li></ul>
+        <ul class="inclui"><li>Análise prévia dos seus materiais</li><li>Sessão individual online de 90 minutos</li><li>Relatório digital em até 24 horas úteis</li></ul>
+        <a class="cta" href="https://reversa-checkout.nane-scheffer.workers.dev/criar-pagamento" data-checkout="true">Contratar a Reversa <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+        <p class="nota">Quando as cinco vagas forem preenchidas, o lote muda e abre lista de espera. Pagamento pelo Mercado Pago.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s azul" id="ariane">
+  <div class="wrap ari">
+    <div class="foto"><img src="ariane-reversa.webp" onerror="this.onerror=null;this.src='ariane-reversa.png'" alt="Retrato de Ariane Scheffer" loading="lazy" width="850" height="989"><span class="etq">Ariane Scheffer</span></div>
+    <div class="txt">
+      <p class="eyebrow" style="color:#a9b7c8">06 · Quem lê o seu trabalho</p>
+      <h2 style="margin-top:22px">Ariane Scheffer</h2>
+      <p>Trabalho com marketing e aquisição desde 2021, tenho MBA em Marketing &amp; Branding e experiência anterior de gestão no mercado autoral.</p>
+      <p>Meu método parte do que você relata e confere com o que os materiais permitem observar.</p>
+      <p>Antes de sugerir qualquer mudança, pergunto quais clientes mais te atraem e quais mais fecham, olho o percurso inteiro e separo o que já funciona do que pede ajuste.</p>
+      <p>Atendo quem vive de trabalho autoral: ceramistas, tapeçaria, joias e calçados autorais, artistas visuais, ateliês e estúdios.</p>
+      <p>A Reversa é uma intervenção delimitada da ECOS, consultoria que cruza estrutura, comunicação, organização e sequência.</p>
+    </div>
+  </div>
+</section>
+
+<section class="s papel" id="paraquem">
+  <div class="wrap">
+    <div class="s-head"><p class="eyebrow">07 · Para quem</p><h2>Serve. Não serve.</h2></div>
+    <div class="pq">
+      <div class="sim"><h3>Serve se</h3><p>Você vive de trabalho autoral (cerâmica, tapeçaria, joias ou calçados autorais, artes visuais, ateliê ou estúdio), já divulgou ou vendeu e quer entender o caminho antes de investir mais.</p></div>
+      <div><h3>Não serve se</h3><p>Você procura quem execute por você.</p></div>
+    </div>
+    <blockquote class="voz">
+      <p>Acredito que boas decisões comerciais começam com boas perguntas. E, muitas vezes, as melhores oportunidades estão justamente onde você ainda não pensou em procurar.</p>
+      <p>Se onde você está já te serve, ficar também é uma opção. Se quer levar o seu trabalho mais longe, o modelo atual está te ajudando, não é mesmo?</p>
+      <cite>Ariane Scheffer</cite>
+    </blockquote>
+    <p class="limites">A Reversa não inclui execução, acompanhamento contínuo, linha editorial, calendário de conteúdo, criação de páginas ou estrutura completa de captação. A leitura orienta decisões.</p>
+  </div>
+</section>
+
+<section class="s" id="perguntas">
+  <div class="wrap">
+    <div class="s-head"><p class="eyebrow">08 · Perguntas</p><h2>Antes de decidir.</h2></div>
+    <div class="faq">
+      <details><summary>Serve para o meu tipo de trabalho?</summary><p>Serve para quem vive de trabalho autoral vendido de forma personalizada: ceramistas, tapeçaria, joias e calçados autorais, artistas visuais, ateliês e estúdios.</p></details>
+      <details><summary>Os casos são reais?</summary><p>Sim, anonimizados a pedido dos clientes.</p></details>
+      <details><summary>Já tenho galeria ou loja que vende por mim.</summary><p>A Reversa não substitui. Galerias e plataformas abrem portas que o plano próprio sozinho não abre. A leitura mostra caminhos comerciais seus, para que você não dependa de um único canal.</p></details>
+      <details><summary>Preciso ter site?</summary><p>Não. A análise parte dos canais e materiais que você usa hoje.</p></details>
+      <details><summary>Vou ter que mudar tudo?</summary><p>A leitura começa pelo que merece ser mantido. Mudança só entra onde há motivo.</p></details>
+      <details><summary>Você executa o que recomenda?</summary><p>Eu analiso e oriento. Você decide como executar, sozinha ou com quem escolher.</p></details>
+      <details><summary>Quando recebo o relatório?</summary><p>Em até 24 horas úteis depois do encontro.</p></details>
+      <details><summary>Como pago?</summary><p>Pelo Mercado Pago, no botão desta página.</p></details>
+      <details><summary>E depois das cinco vagas?</summary><p>O lote muda. Quem quiser ser avisado entra na lista de espera.</p></details>
+      <details><summary>Ainda tenho dúvida.</summary><p><a href="https://nanescheffer.wixforms.com/f/7505968077872301067" target="_blank" rel="noopener noreferrer">Envie sua dúvida pelo formulário de contato.</a></p></details>
+    </div>
+  </div>
+</section>
+
+<section class="fecho">
+  <div class="wrap">
+    <h2>Vire<br>o quadro.</h2>
+    <div class="l">
+      <p>O que você já construiu merece ser observado antes de ser alterado.</p>
+      <div class="acoes">
+        <ul class="vagas"><li class="vaga"><span>Nº 01</span><i></i></li><li class="vaga"><span>Nº 02</span><i></i></li><li class="vaga"><span>Nº 03</span><i></i></li><li class="vaga"><span>Nº 04</span><i></i></li><li class="vaga"><span>Nº 05</span><i></i></li></ul>
+        <a class="cta inv" href="https://reversa-checkout.nane-scheffer.workers.dev/criar-pagamento" data-checkout="true">Contratar a Reversa · R$ 590 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 12h16M14 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>Reversa é um produto da ECOS. Consultoria individual de Ariane Scheffer. A Reversa analisa e orienta; não executa as ações recomendadas e não garante vendas, crescimento ou resultados específicos. Casos reais anonimizados a pedido dos clientes.</p>
+    <p>Nem tudo é o que parece.</p>
+  </div>
+</footer>
+
+<div class="fixa" id="fixa"><div class="p">R$ 590<small>5 VAGAS · RELATÓRIO EM 24H ÚTEIS</small></div><a class="cta" href="https://reversa-checkout.nane-scheffer.workers.dev/criar-pagamento" data-checkout="true">Contratar</a></div>
+
+<script>
+(function(){
+  document.querySelectorAll('.btn-virar').forEach(function(b){
+    var f=document.getElementById(b.getAttribute('data-for'));
+    if(!f)return;
+    b.addEventListener('click',function(){f.classList.toggle('virado');b.firstChild.nodeValue=f.classList.contains('virado')?'Voltar à frente ':'Virar o quadro ';});
+  });
+  var p=document.getElementById('play'),pl=document.getElementById('player');
+  if(p&&pl){p.addEventListener('click',function(){
+    pl.innerHTML='<iframe src="https://www.youtube.com/embed/mNJI0cFo26I?autoplay=1&rel=0&cc_load_policy=1" title="Reversa, vídeo" referrerpolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>';
+  });}
+  var fx=document.getElementById('fixa'),h=document.getElementById('oferta');
+  function t(){if(!fx)return;var y=window.scrollY||0;fx.classList.toggle('on',window.innerWidth<=980||y>window.innerHeight*0.9);}
+  window.addEventListener('scroll',t,{passive:true});t();
+})();
+</script>
+<script>
+(function(){
+let busy=false;
+const buttons=[...document.querySelectorAll('[data-checkout]')];
+buttons.forEach(checkout=>checkout.addEventListener('click',async function(event){
+ event.preventDefault(); if(busy)return; busy=true;
+ const original=checkout.innerHTML; buttons.forEach(b=>b.setAttribute('aria-disabled','true')); checkout.textContent='Abrindo pagamento...';
+ try{
+ const cookies=Object.fromEntries(document.cookie.split('; ').filter(Boolean).map(item=>{const i=item.indexOf('=');return [item.slice(0,i),decodeURIComponent(item.slice(i+1))];}));
+ const gaClientId=cookies._ga?cookies._ga.replace(/^GA\d+\.\d+\./,''):null;
+ const resposta=await fetch('https://reversa-checkout.nane-scheffer.workers.dev/criar-pagamento',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({ga_client_id:gaClientId,fbp:cookies._fbp||null,fbc:cookies._fbc||null})});
+ if(!resposta.ok)throw new Error('Falha ao criar pagamento: '+resposta.status);
+ const dados=await resposta.json(); if(!dados.checkout_url||!/^https:\/\//i.test(dados.checkout_url))throw new Error('Link de pagamento inválido');
+ window.location.assign(dados.checkout_url);
+ }catch(erro){console.error('Checkout Reversa',erro);alert('Não foi possível abrir o pagamento agora. Tente novamente em instantes.');}
+ finally{busy=false;buttons.forEach(b=>b.removeAttribute('aria-disabled'));checkout.innerHTML=original;}
+}));})();
+</script>
+</body>
+</html>
